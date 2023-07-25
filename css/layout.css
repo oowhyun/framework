@@ -1,0 +1,19 @@
+/* 한글을 지원하지 않는 영문폰트를 앞에 배치해 폰트가 입혀지는 우선순위 만들기 (5000원같은)*/
+body{
+    font-family: 'Montserrat', 'Noto+Sans+KR', sans-serif;
+    color: #333;
+    letter-spacing: -0.085em;
+    font-weight: 200;
+    font-weight: 400;
+}
+p, h1,h2, h3, h4, h5, h6, ul, li, dl, dt, dd{margin: 0; padding: 0;}
+li, dl{list-style: none;}
+a{text-decoration: none; color:#333}
+
+/* 공통클래스 */
+.bg-black{
+    background-color: var(--bbbcolor) !important;
+}
+.section{
+    height: 100vh;
+}

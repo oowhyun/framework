@@ -1,0 +1,53 @@
+#hd{
+    a{
+        color:var(--bbycolor);
+    }
+    .allmenu{
+        &.collapsed{
+
+        }
+
+        &:not(.collapsed){
+            span{
+                   &:after{
+                    transform: rotate(-45deg);
+                    top: 6.5px;
+                   }
+                   &:before{
+                    bottom: 6.5px;
+                    transform: rotate(45deg);
+                    
+                   
+                   }
+            }
+        }
+        span{
+            height: 0.8em;
+            background: none;
+            position: relative;
+            &:after,&:before{
+                content: "";
+                position: absolute;
+                left: 0;
+               
+                right: 0;
+                height: 2px;
+                background-color: var(--bbycolor);
+                transition-duration: 0.5s;
+            }
+           &:after{
+            bottom:5px;
+           }
+           &:before{
+            top:5px;
+           }
+        }
+    }
+}
+
+#navbarSupportedConent.show{
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
