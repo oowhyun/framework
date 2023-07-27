@@ -1,5 +1,25 @@
+#hd {
+  height: 5rem;
+}
+#hd .navbar-brand {
+  width: 7rem;
+  height: 2.5rem;
+  background-image: url(../img/logo_w.png);
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+#hd:hover {
+  background-color: white;
+}
+#hd:hover .navbar-brand {
+  background-image: url(../img/logo.png);
+}
+#hd:hover a {
+  color: var(--cyan);
+}
 #hd a {
-  color: var(--bbycolor);
+  color: white;
 }
 #hd .allmenu:not(.collapsed) span:after {
   transform: rotate(-45deg);
@@ -44,10 +64,11 @@
   background-size: cover;
   animation-name: bani;
   animation-duration: 12s;
-  background-position: bottom;
+  background-position: center;
   animation-delay: 0.5s;
 }
 #mainBanner div {
+  color: var(--cyan);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -62,6 +83,16 @@
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.more {
+  border: #222 1px solid;
+  color: #222;
+  font-size: 1.5rem;
+}
+.more:hover {
+  border-color: rgb(57, 95, 198);
+  text-decoration: none;
 }
 
 @keyframes bani {
